@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-color: hsl(216, 12%, 8%);
+    color: white;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    font-family: sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 95%;
+    max-width: 450px;
+    min-height: 45vh;
+    padding: 1rem 2rem;
+    background: hsl(213, 19%, 18%);
+    border-radius: 1rem;
+}
+
+.container .svg{
+    background-color: hsl(216, 10%, 30%);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-content: center;
+    place-items: center;
+}
+
+.rating{
+    display: flex;
+    justify-content: space-around;
+}
+
+form{
+    display: grid;
+}
+
+button{
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+    font-size: 1.5rem;
+    padding: 0.5em;
+    border-radius: 1em;
+    margin-top: .9em;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: .6rem;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+
+input:hover{
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+input:focus{
+    background-color: hsl(217, 12%, 63%);
+    color: white;
+    outline: none;
+    pointer-events: none;
+}
+
+input{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background-color: hsl(216, 9%, 33%);
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.mainP{
+    color: hsl(213, 14%, 87%);
+}
+
+.thankMessage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem 2.5rem;
+    text-align: center;
+    width: 95%;
+    max-width: 450px;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 1rem;
+    min-height: 45vh;
+}
+
+.reply{
+    color: hsl(25, 97%, 53%);
+    background-color: hsla(217, 12%, 63%, 0.148);
+    border-radius: 1rem;
+    padding: .3em .9em;
+}
+
+.unactive{
+    display: none;
+}
+
+.attribution { font-size: 1rem; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
